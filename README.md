@@ -43,3 +43,57 @@ Students collection
 Attendance collection
 
 Mongoose handles schema and queries.
+# Student Attendance Dashboard (MERN)
+
+A clean MERN app where teachers log in, mark attendance for their class, and view a dynamic summary chart. Uses JWT auth (dummy teacher), reusable UI components, RESTful APIs, MongoDB (with seed script), and Recharts.
+
+---
+
+## Project Structure
+
+```
+attendance-app/
+├─ backend/
+│  ├─ package.json
+│  ├─ .env.example
+│  ├─ server.js
+│  ├─ config/
+│  │  └─ db.js
+│  ├─ middleware/
+│  │  └─ auth.js
+│  ├─ models/
+│  │  ├─ Student.js
+│  │  └─ Attendance.js
+│  ├─ routes/
+│  │  ├─ auth.js
+│  │  ├─ students.js
+│  │  └─ attendance.js
+│  └─ seed/
+│     └─ seed.js
+└─ frontend/
+   ├─ package.json
+   ├─ vite.config.js
+   └─ src/
+      ├─ main.jsx
+      ├─ App.jsx
+      ├─ styles.css
+      ├─ api/axios.js
+      ├─ utils/token.js
+      ├─ context/AuthContext.jsx
+      ├─ components/
+      │  ├─ Button.jsx
+      │  ├─ Input.jsx
+      │  ├─ Card.jsx
+      │  ├─ Table.jsx
+      │  ├─ Toggle.jsx
+      │  ├─ Navbar.jsx
+      │  └─ ProtectedRoute.jsx
+      └─ pages/
+         ├─ Login.jsx
+         ├─ StudentList.jsx
+         ├─ Summary.jsx
+         └─ NotFound.jsx
+```
+
+---
+
